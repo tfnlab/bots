@@ -1,11 +1,10 @@
 1.
+git clone https://github.com/tfnlab/bots.git && cd bots
+
+2.
 sudo bash ./setup.sh
 
 [
-git clone https://github.com/tfnlab/bots.git
-
-cd bots
-
 sudo apt update
 sudo apt install default-jre
 
@@ -21,5 +20,5 @@ sudo apt-get install xvfb
 xvfb-run -a your-selenium-command
 ]
 
-2.
+3.
 xvfb-run -a java -cp "/root/bots/sel/*" TSpaces_v2 'https://twitter.com/nocexeth/status/1661829170249482240?s=20' '/root/bots/chromedriver' '/usr/bin/google-chrome'
