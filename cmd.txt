@@ -12,9 +12,11 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt-get install -f
 google-chrome --version
 
-export DISPLAY=:0
+]
+
+
+3. export DISPLAY=:0
 sudo apt-get install xvfb
 xvfb-run -a your-selenium-command
-]
 
 xvfb-run -a java -cp "/root/bots/sel/*" TSpaces_v2 'https://twitter.com/nocexeth/status/1661829170249482240?s=20' '/root/bots/chromedriver' '/usr/bin/google-chrome'
