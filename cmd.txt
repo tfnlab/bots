@@ -4,4 +4,8 @@ vult
 xvfb-run -a java -cp "/root/bots/sel/*" TSpaces_v2 'https://twitter.com/nocexeth/status/1661829170249482240?s=20' '/root/bots/chromedriver' '/usr/bin/google-chrome' '5'
 
 aws
-xvfb-run -a java -cp "/home/ubuntu/bots/sel/*" TSpaces_v2 'https://twitter.com/nocexeth/status/1662119418254729217?s=20' '/home/ubuntu/bots/chromedriver' '/usr/bin/google-chrome' '5'
+xvfb-run -a java -cp "/home/ubuntu/bots/sel/*" TSpaces_v2 'https://twitter.com/nocexeth/status/1662119418254729217?s=20' '/home/ubuntu/bots/chromedriver' '/usr/bin/google-chrome' '40'
+
+
+open closed windows
+osascript -e 'tell application "Terminal" to set miniaturized of every window to false'
