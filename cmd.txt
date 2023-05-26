@@ -1,26 +1,8 @@
-1.
 git clone https://github.com/tfnlab/bots.git && cd bots && sudo bash ./setup.sh
 
-[
-sudo apt update
-sudo apt install default-jre
-
-sudo apt update
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install wget
-sudo dpkg -i google-chrome-stable_current_amd64.deb
-sudo apt-get install -f
-google-chrome --version
-
-export DISPLAY=:0
-sudo apt-get install xvfb
-xvfb-run -a your-selenium-command
-]
-
-2.
 vult
 xvfb-run -a java -cp "/root/bots/sel/*" TSpaces_v2 'https://twitter.com/nocexeth/status/1661829170249482240?s=20' '/root/bots/chromedriver' '/usr/bin/google-chrome'
 
 aws
-xvfb-run -a java -cp "/home/ubuntu/bots/sel/*" TSpaces_v2 'https://twitter.com/nocexeth/status/1661829170249482240?s=20' '/home/ubuntu/bots/chromedriver' '/usr/bin/google-chrome'
+xvfb-run -a java -cp "/home/ubuntu/bots/sel/*" TSpaces_v2 'https://twitter.com/nocexeth/status/1662119418254729217?s=20' '/home/ubuntu/bots/chromedriver' '/usr/bin/google-chrome'
 /home/ubuntu/bots
