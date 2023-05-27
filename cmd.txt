@@ -1,11 +1,12 @@
 git clone https://github.com/tfnlab/bots.git && cd bots && sudo bash ./setup.sh
 
 vult
-xvfb-run -a java -cp "/root/bots/sel/*" TSpaces_v2 'https://twitter.com/nocexeth/status/1661829170249482240?s=20' '/root/bots/chromedriver' '/usr/bin/google-chrome' '5'
+xvfb-run -a java -cp "/root/bots/sel/*" TSpaces_v2 'https://twitter.com/nocexeth/status/1662357139367821313?s=20' '/root/bots/chromedriver' '/usr/bin/google-chrome' '5'
 
 aws
-xvfb-run -a java -cp "/home/ubuntu/bots/sel/*" TSpaces_v2 'https://twitter.com/nocexeth/status/1662273157804466181?s=20' '/home/ubuntu/bots/chromedriver' '/usr/bin/google-chrome' '1140'
+xvfb-run -a java -cp "/home/ubuntu/bots/sel/*" TSpaces_v2 'https://twitter.com/nocexeth/status/1662357139367821313?s=20' '/home/ubuntu/bots/chromedriver' '/usr/bin/google-chrome' '1140' & exit && xdotool key Ctrl+Shift+Q
 
+xvfb-run -a java -cp "/home/ubuntu/bots/sel/*" TSpaces_v2 'https://twitter.com/nocexeth/status/1662357139367821313?s=20' '/home/ubuntu/bots/chromedriver' '/usr/bin/google-chrome' '25' & echo exit && exit
 
 open closed windows
 osascript -e 'tell application "Terminal" to set miniaturized of every window to false'
