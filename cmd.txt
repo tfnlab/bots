@@ -1,7 +1,7 @@
 git clone https://github.com/tfnlab/bots.git && cd bots && sudo bash ./setup.sh
 
 vult
-xvfb-run -a java -cp "/root/bots/sel/*" TSpaces_v2 'https://twitter.com/nocexeth/status/1662357139367821313?s=20' '/root/bots/chromedriver' '/usr/bin/google-chrome' '5'
+xvfb-run -a java -cp "/root/bots/sel/*" TSpaces_v2 '500' '/root/bots/chromedriver' '/usr/bin/google-chrome' 'https://twitter.com/nocexeth/status/1664041463079112704?s=20' 
 
 aws
 xvfb-run -a java -cp "/home/ubuntu/bots/sel/*" TSpaces_v2 '4000' '/home/ubuntu/bots/chromedriver' '/usr/bin/google-chrome' 'https://twitter.com/nocexeth/status/1663563191698485249?s=20' & echo exit && exit
