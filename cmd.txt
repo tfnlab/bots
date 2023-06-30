@@ -1,10 +1,12 @@
 git clone https://github.com/tfnlab/bots.git && cd bots && sudo bash ./setup.sh
 
 vult
-xvfb-run -a java -cp "/root/bots/sel/*" TSpaces_v2 '500' '/root/bots/chromedriver' '/usr/bin/google-chrome' 'https://twitter.com/nocexeth/status/1664041463079112704?s=20' 
+export DISPLAY=:0 && cd bots && xvfb-run -a java -cp "/root/bots/sel/*" TSpaces_v2 '500' '/root/bots/chromedriver' '/usr/bin/google-chrome' 'https://twitter.com/XtremeArmy14a/status/1665223719806021633?s=20' '500' '5000' & echo exit && exit
+xvfb-run -a java -cp "/root/bots/sel/*" TSpaces_v2 '500' '/root/bots/chromedriver' '/usr/bin/google-chrome' 'https://twitter.com/XtremeArmy14a/status/1665223719806021633?s=20' '500' '5000' & echo exit && exit
 
 aws
-xvfb-run -a java -cp "/home/ubuntu/bots/sel/*" TSpaces_v2 '4000' '/home/ubuntu/bots/chromedriver' '/usr/bin/google-chrome' 'https://twitter.com/nocexeth/status/1663563191698485249?s=20' & echo exit && exit
+xvfb-run -a java -cp "/home/ubuntu/bots/sel/*" TSpaces_v2 '4000' '/home/ubuntu/bots/chromedriver' '/usr/bin/google-chrome' 'https://twitter.com/XtremeArmy14a/status/1665223719806021633?s=20' '500' '5000' & echo exit && exit
+export DISPLAY=:0 && cd bots && xvfb-run -a java -cp "/home/ubuntu/bots/sel/*" TSpaces_v2 '4000' '/home/ubuntu/bots/chromedriver' '/usr/bin/google-chrome' 'https://twitter.com/XtremeArmy14a/status/1665223719806021633?s=20' '500' '5000' & echo exit && exit
 
 cd bots
 

@@ -28,5 +28,3 @@ echo google-chrome --version
 export DISPLAY=:0
 
 sudo apt-get -y install xvfb
-
-xvfb-run -a your-selenium-command
